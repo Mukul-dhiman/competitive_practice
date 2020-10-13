@@ -1,0 +1,24 @@
+prop #1:   GCD(Fm,Fn)=FGCD(m,n)
+
+prop #2:   Fn=⎡(1+√5)/2)^n)/√5⎤
+where the square brackets denote rounding to the nearest integer.
+
+
+prop #3:    (Fn  Fn+1)=(F0  F1)⋅P^n
+p=[[1,0],[1,1]]
+
+
+
+unordered_map<long long int,int> every_fibo;
+void every_fibo_cal(){
+    every_fibo[0]++;
+    every_fibo[1]+=2;
+    long long int c=2,b=1,a=1,i=3;
+    while(c<=10000000000){
+        c=a+b;
+        every_fibo[c]=i++;
+        a=b;
+        b=c;
+    }
+    return;
+}
