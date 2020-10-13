@@ -25,7 +25,7 @@ int main(){
 	// std::cout << std::fixed;
     // std::cout << std::setprecision(10);
 	FAST_IO;
-    test();
-    // solve();
+    // test();
+    solve();
     return 0;
 }
