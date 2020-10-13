@@ -9,7 +9,20 @@ typedef  long long int ll;
 #define out(i) cout<<i<<endl
 #define mod 1000000007 //10e9+7
 void solve(){
-    
+    int n;
+    cin>>n;
+    if(n==1){
+        out(-1);
+    }
+    else{
+        cout<<"2";
+        n-=1;
+        while(n>0){
+            cout<<"3";
+            n-=1;
+        }
+        cout<<endl;
+    }
     return; 
 }
 void test(){
@@ -25,7 +38,7 @@ int main(){
 	// std::cout << std::fixed;
     // std::cout << std::setprecision(10);
 	FAST_IO;
-    // test();
-    solve();
+    test();
+    // solve();
     return 0;
 }
