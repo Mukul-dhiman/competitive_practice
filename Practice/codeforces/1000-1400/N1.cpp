@@ -9,7 +9,7 @@ typedef  long long int ll;
 #define out(i) cout<<i<<endl
 #define mod 1000000007 //10e9+7
 
-// https://codeforces.com/contest/1326/problem/A
+// https://codeforces.com/contest/1326/problem/A 
 
 void solve(){
     int n;
