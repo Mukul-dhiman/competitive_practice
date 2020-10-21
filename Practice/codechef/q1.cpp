@@ -7,15 +7,26 @@ typedef  long long int ll;
 #define iloop(a,i,n) for(int i=a;i<=n;i++)
 #define bug(i) cout<<"debug "<<i<<endl
 #define out(i) cout<<i<<endl
-#define mod 1000000007 //10e9+7
+#define mod 1000000009 //10e9+9
+
+// https://www.codechef.com/LRNDSA07/problems/CDQU5
+
+int a[1000001]={0};
 void pre(){
 	FAST_IO;
-    
+    a[0]=0;
+    a[1]=0;
+    a[2]=1;
+    a[3]=1;
+    iloop(4,i,1000000){
+        a[i]=(a[i-2]+a[i-3])%mod;
+    }
+    return; 
 }
 void solve(){
     int x;
-    cin>>s;
-    cout<<a[x];
+    cin>>x;
+    out(a[x]);
     return; 
 }
 void test(){
