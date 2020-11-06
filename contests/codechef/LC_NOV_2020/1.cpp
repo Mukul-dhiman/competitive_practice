@@ -12,7 +12,7 @@ void pre(){
 	FAST_IO;
 }
 void solve(){
-
+    
     return; 
 }
 void test(){
