@@ -10,9 +10,11 @@ typedef  long long int ll;
 #define mod 1000000007 //10e9+7
 void pre(){
 	FAST_IO;
+    //code your pre celculations
+
 }
 void solve(){
-
+    
     return; 
 }
 void test(){
