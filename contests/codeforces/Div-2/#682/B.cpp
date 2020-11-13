@@ -15,7 +15,23 @@ void pre(){
 
 }
 void solve(){
-    
+    int n,temp;
+    bool ans=false;
+    cin>>n;
+    unordered_map<int,int> m;
+    loop(i,n){
+        cin>>temp;
+        m[temp]++;
+        if(m[temp]>1){
+            ans=true;
+        }
+    }
+    if(ans){
+        out("YES");
+    }
+    else{
+        out("NO");
+    }
     return; 
 }
 void test(){

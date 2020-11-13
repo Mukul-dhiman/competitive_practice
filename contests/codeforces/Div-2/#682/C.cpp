@@ -14,8 +14,46 @@ void pre(){
     //code for pre celculations
 
 }
+int n,m;
+vector<vector<int>> v(100,vector<int>(100,0)),a(100,vector<int>(100,0));
+void check(int i,int j){
+    if(i>0){
+        if(j>0){
+            if(v[i][j]==v[i-1][j] or v[i][j]==v[i][j-1])
+        }
+        else{
+
+        }
+    }
+    else{
+        if(j>0){
+
+        }
+    }
+}
 void solve(){
-    
+    cin>>n>>m;
+    loop(i,n){
+        loop(j,m){
+            a[i][j]=0;
+        }
+    }
+    loop(i,n){
+        loop(j,m){
+            cin>>v[i][j];
+        }
+    }
+    loop(i,n){
+        loop(j,m){
+            check(i,j);
+        }
+    }
+    loop(i,n){
+        loop(j,m){
+            cout<<v[i][j]<<" ";
+        }
+        cout<<endl;
+    }
     return; 
 }
 void test(){

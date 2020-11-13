@@ -15,7 +15,12 @@ void pre(){
 
 }
 void solve(){
-    
+    int n;
+    cin>>n;
+    loop(i,n){
+        cout<<"1 ";
+    }
+    cout<<endl;
     return; 
 }
 void test(){

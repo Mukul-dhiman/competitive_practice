@@ -32,7 +32,7 @@ int main(){
     // std::cout << std::setprecision(10);
 	submit=0;
     pre();
-    test();
-    // solve();
+    // test();
+    solve();
     return 0;
 }
