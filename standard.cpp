@@ -3,6 +3,7 @@ using namespace std;
 typedef  long long int ll;
 #define FAST_IO ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define endl "\n"
+#define pb push_back
 #define loop(i,n) for(int i=0;i<n;i++)
 #define iloop(a,i,n) for(int i=a;i<=n;i++)
 #define bug(i) cout<<"debug at:"<<__LINE__<<" "<<i<<endl
