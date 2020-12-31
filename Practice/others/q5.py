@@ -1,3 +1,5 @@
+import time
+start = time.time()
 
 def funWithAnagrams(s):
 	dict = {}
@@ -21,5 +23,10 @@ def funWithAnagrams(s):
 
 strArr = ['code','doce','ecod','framer','frame']
 
+i=0
+while(i<1000000):
+	u = funWithAnagrams(strArr) 
+	i+=1
 
-print(funWithAnagrams(strArr))
+end = time.time()
+print((end-start)*1000,"ms")
