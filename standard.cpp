@@ -31,7 +31,6 @@ void test(){
 int main(){
 	// std::cout << std::fixed;
     // std::cout << std::setprecision(10);
-	submit=0;
     pre();
     test();
     // solve();
