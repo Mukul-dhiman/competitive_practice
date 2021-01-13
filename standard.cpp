@@ -9,7 +9,6 @@ typedef  long long int ll;
 #define bug(i) cout<<"debug at:"<<__LINE__<<" "<<i<<endl
 #define out(i) cout<<i<<endl
 #define mod 1000000007 //10e9+7
-bool submit;
 void pre(){
 	FAST_IO;
     //code for pre celculations
