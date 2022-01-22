@@ -19,29 +19,45 @@ typedef pair<int,int> pi;
 #define SQ(a) (a)*(a)
 
 
-
 void solve(){
-    int n,k,a,b;
-    cin>>n>>k;
-    pi l[n];
+    int n;
+    cin>>n;
+    int a[n];
+    vector<int> b;
     loop(i,n){
-        cin>>l[i].F;
+        cin>>a[i];
     }
-    loop(i,n){
-        cin>>l[i].S;
+    vector<int> rmix;
+    unordered_map<int,int> m;
+    m.clear();
+    int mix=0;
+    for(int i=n-1;i>=0;i--){
+        m[a[i]]=1;
+        while(m.find(mix)!=m.end()){
+            mix++;
+        }
+        rmix.PB(mix);
     }
-    sort(l,l+n);
-    loop(i,n){
-        
-            if(l[i].F>k){
-                break;
-            }
-            else{
-                k+=l[i].S;
-            }
-        
+    reverse(rmix.begin(),rmix.end());
+    m.clear();
+    int tmix=rmix[0],cmix=0;
+    for(int i=0;i<n;i++){
+        m[a[i]]=1;
+        while(m.find(cmix)!=m.end()){
+            cmix++;
+        }
+        if(tmix==cmix){
+            b.PB(tmix);
+            tmix=rmix[i+1];
+            cmix=0;
+            m.clear();
+        }
     }
-    out(k);
+    out(b.size());
+    loop(i,b.size()){
+        cout<<b[i]<<" ";
+    }
+    cout<<endl;
     return; 
 }
 void test(){

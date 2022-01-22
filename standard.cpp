@@ -36,7 +36,7 @@ void test(){
 }
 int main(){
 	FAST_IO;
-    // test();
-    solve();
+    test();
+    // solve();
     return 0;
 }
