@@ -19,10 +19,29 @@ typedef pair<int,int> pi;
 #define SQ(a) (a)*(a)
 
 
+
 void solve(){
-    int x;
-    cin>>x;
-    
+    ll x,y;
+    cin>>y>>x;
+    ll m=max(y,x);
+    ll ans = 0;
+    if(m%2==1){
+        if(x<=y){
+            ans+=SQ(m-1)+x;
+        }
+        else{
+            ans+=SQ(m)-y+1;
+        }
+    }
+    else{
+        if(y<=x){
+            ans+=SQ(m-1)+y;
+        }
+        else{
+            ans+=SQ(m)-x+1;
+        }
+    }
+    out(ans);
     return; 
 }
 void test(){
@@ -36,7 +55,7 @@ void test(){
 }
 int main(){
 	FAST_IO;
-    // test();
-    solve();
+    test();
+    // solve();
     return 0;
 }

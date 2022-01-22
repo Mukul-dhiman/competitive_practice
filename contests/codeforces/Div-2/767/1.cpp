@@ -19,10 +19,10 @@ typedef pair<int,int> pi;
 #define SQ(a) (a)*(a)
 
 
+
 void solve(){
-    int x;
-    cin>>x;
-    
+    int n;
+    cin>>n;
     return; 
 }
 void test(){
