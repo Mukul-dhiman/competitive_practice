@@ -21,14 +21,22 @@ typedef pair<int,int> pi;
 
 
 void solve(){
-    ll x,temp;
-    cin>>x;
-    ll total=x*(x+1)/2;
-    loop(i,x-1){
-        cin>>temp;
-        total-=temp;
+    string s;
+    cin>>s;
+    int l = s.length();
+    char c=s[0];
+    int mx=1,cmax=1;
+    iloop(1,i,l-1){
+        if(s[i]==c){
+            cmax++;
+            mx=max(mx,cmax);
+        }
+        else{
+            c=s[i];
+            cmax=1;
+        }
     }
-    out(total);
+    out(mx);
     return; 
 }
 void test(){

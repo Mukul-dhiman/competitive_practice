@@ -21,14 +21,20 @@ typedef pair<int,int> pi;
 
 
 void solve(){
-    ll x,temp;
-    cin>>x;
-    ll total=x*(x+1)/2;
-    loop(i,x-1){
+    ll n;
+    cin>>n;
+    ll ans=0,temp=0,c=0;
+    loop(i,n){
         cin>>temp;
-        total-=temp;
+        if(n==0){
+            c=temp;
+        }
+        else{
+            ans+=max(ll(0),c-temp);
+            c=max(c,temp);
+        }
     }
-    out(total);
+    out(ans);
     return; 
 }
 void test(){
